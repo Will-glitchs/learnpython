@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 	<title>Python Learning Resources</title>
 	<style>
@@ -17,7 +19,7 @@
 			vertical-align: top;
 			margin: 0 auto 40px auto; /* added 40px margin bottom */
 		}
-		h2, ul {
+		h2, .btn-container {
 			text-align: left;
 			display: inline-block;
 			vertical-align: top;
@@ -26,6 +28,20 @@
 		iframe {
 			display: block;
 			margin: 0 auto;
+		}
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			border: 2px solid gold;
+			border-radius: 5px;
+			color: gold;
+			font-weight: bold;
+			text-decoration: none;
+			margin-right: 10px;
+		}
+		.btn:hover {
+			background-color: gold;
+			color: black;
 		}
 	</style>
 </head>
@@ -38,8 +54,10 @@
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<p></p> <!-- separated by 40px margin -->
 	<h2>Tools</h2>
-	<ul>
-		<li><a href="https://code.visualstudio.com/download">Visual Studio Code</a></li>
-		<li><a href="https://www.python.org/downloads/">Python 3</a></li>
-	</ul>
+	<div class="btn-container">
+		<a href="https://code.visualstudio.com/download" class="btn">Visual Studio Code</a>
+		<a href="https://www.python.org/downloads/" class="btn">Python 3</a>
+		<a href="https://www.jetbrains.com/pycharm/" class="btn">Pycharm</a>
+	</div>
 </body>
+</html>
